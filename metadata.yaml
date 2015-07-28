@@ -1,0 +1,33 @@
+_repo: The-Awakening-and-Selected-Short-Stories_160
+creator:
+  author:
+    agent_name: Chopin, Kate
+    aliases:
+    - Chopin, Katherine O'Flaherty
+    - O'Flaherty, Catherine
+    birthdate: 1850
+    deathdate: 1904
+    gutenberg_agent_id: '100'
+    url: http://www.gutenberg.org/2009/agents/100
+    wikipedia: http://en.wikipedia.org/wiki/Kate_Chopin
+gutenberg_bookshelf: Banned Books from Anne Haight's list
+gutenberg_issued: '2006-03-11'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '160'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- '!lcsh:Adultery -- Fiction'
+- '!lcsh:Louisiana -- Social life and customs -- Fiction'
+- '!lcc:PS'
+- '!lcsh:New Orleans (La.) -- Fiction'
+- '!lcsh:Self-actualization (Psychology) -- Fiction'
+- '!lcsh:Women -- Louisiana -- New Orleans -- Social conditions -- Fiction'
+tableOfContents: "The awakening -- Beyond the Bayou -- Ma\xE1me P\xE9lagle -- D\xE9\
+  sir\xE9e's baby -- A respectable woman -- The kiss -- A pair of silk stockings --\
+  \ The locket -- A reflection."
+title: The Awakening, and Selected Short Stories
+url: http://www.gutenberg.org/ebooks/160
