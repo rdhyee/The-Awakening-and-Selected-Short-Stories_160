@@ -20,14 +20,14 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Adultery -- Fiction'
-- '!lcsh:Louisiana -- Social life and customs -- Fiction'
-- '!lcc:PS'
-- '!lcsh:New Orleans (La.) -- Fiction'
 - '!lcsh:Self-actualization (Psychology) -- Fiction'
+- '!lcc:PS'
+- '!lcsh:Louisiana -- Social life and customs -- Fiction'
+- '!lcsh:Adultery -- Fiction'
+- '!lcsh:New Orleans (La.) -- Fiction'
 - '!lcsh:Women -- Louisiana -- New Orleans -- Social conditions -- Fiction'
-tableOfContents: "The awakening -- Beyond the Bayou -- Ma\xE1me P\xE9lagle -- D\xE9\
-  sir\xE9e's baby -- A respectable woman -- The kiss -- A pair of silk stockings --\
-  \ The locket -- A reflection."
+tableOfContents: The awakening -- Beyond the Bayou -- Maáme Pélagle -- Désirée's baby
+  -- A respectable woman -- The kiss -- A pair of silk stockings -- The locket --
+  A reflection.
 title: The Awakening, and Selected Short Stories
 url: http://www.gutenberg.org/ebooks/160
