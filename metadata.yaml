@@ -26,12 +26,12 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Self-actualization (Psychology) -- Fiction'
-- '!lcc:PS'
-- '!lcsh:Louisiana -- Social life and customs -- Fiction'
-- '!lcsh:Adultery -- Fiction'
-- '!lcsh:New Orleans (La.) -- Fiction'
-- '!lcsh:Women -- Louisiana -- New Orleans -- Social conditions -- Fiction'
+- '!lcc: PS'
+- '!lcsh: Louisiana -- Social life and customs -- Fiction'
+- '!lcsh: Women -- Louisiana -- New Orleans -- Social conditions -- Fiction'
+- '!lcsh: Self-actualization (Psychology) -- Fiction'
+- '!lcsh: New Orleans (La.) -- Fiction'
+- '!lcsh: Adultery -- Fiction'
 tableOfContents: The awakening -- Beyond the Bayou -- Maáme Pélagle -- Désirée's baby
   -- A respectable woman -- The kiss -- A pair of silk stockings -- The locket --
   A reflection.
