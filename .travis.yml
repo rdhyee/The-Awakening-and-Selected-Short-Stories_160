@@ -1,0 +1,32 @@
+language: ruby
+before_install:
+- gem install asciidoctor tilt
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
+  -d book book.asciidoc -o book.html
+- git clone https://github.com/gitenberg-dev/HTMLBook
+- xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
+- cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
+- cp cover.jpg OEBPS/cover.jpg
+- if test -d "./images"; then mv ./images ./OEBPS/ ;fi
+- zip -rX book.epub mimetype
+- zip -rX book.epub OEBPS/ META-INF/
+- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
+- mv book.epub The-Awakening-and-Selected-Short-Stories.epub
+branches:
+  only:
+  - master
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: iio33Mi2tjFufAH2qXXynqxkJC9FK/JfCGcRmJENut8fFlxg64mKnKv3RAFBUTuuuffJbYvC1vzyDYADIGcbPkI62WxooOg3j9r8IHB/toi9qJeFqrHyCM4KhRyBD5mDjfoxqJJ0uKrF+X7S2vo9HZ49QTbFjUiuO236YIrA7U+JrRQ+S5v3zVZTZvlWtOZi+gXv+kgK+ar5PFwSQdtGHEcENX5ryYYMedxMAyuQW/8Mr8VCuSmmQpm019S4UYMIAfV0kuUC+XBveUALiehlksrYCiM35rfsFI80Y8Hk89bwW+eGGphABqzfq1+yEZjRYuEYI6Fac0BONXI3ldRgt0YViX8Woil2lru470pi8C2a+c169ZzGHJtb42wKATiktryxxNqlObw+vEckyXs9X8de4XwBE8QVe+3n8qDpsQ450v9smfGPj2C1j82rSBL9UDTsXEB2yHGjxnPQvGPMJa+qjdt0kAvIafEm2c8DZc+FpYuSTAEz3aZDQSMvK+JzNlR5OjuRfIDEI7Yh8XuQnTjh5nMlDNd8557c2VN3Tjwoh1JI5OivP5UNojU1811Xc5pvWfmfgP4trpyWcHUaior9ZuU18AJAMMmddrTbrW2D+7z9/9fJ7oD0ccGW+6d8hwseOiYs9aVb/bvjPluKvcQZZHbj3EWb7dFUwPEMkHk=
+  file: The-Awakening-and-Selected-Short-Stories.epub
+  "on":
+    repo: GITenberg/The-Awakening-and-Selected-Short-Stories_160
+addons:
+  apt:
+    packages:
+    - xsltproc
