@@ -1,5 +1,5 @@
 _repo: The-Awakening-and-Selected-Short-Stories_160
-_version: 0.0.2
+_version: 0.1.0
 covers:
 - attribution: Ed Gaither - Modern Electrographic, 2015
   cover_type: original
@@ -34,6 +34,7 @@ subjects:
 - '!lcsh: Self-actualization (Psychology) -- Fiction'
 - '!lcsh: New Orleans (La.) -- Fiction'
 - '!lcsh: Adultery -- Fiction'
+- GITenberg
 tableOfContents: The awakening -- Beyond the Bayou -- Maáme Pélagle -- Désirée's baby
   -- A respectable woman -- The kiss -- A pair of silk stockings -- The locket --
   A reflection.
